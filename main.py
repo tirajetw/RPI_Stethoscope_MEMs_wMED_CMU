@@ -23,7 +23,7 @@ while True:
         with pysftp.Connection(host=myHostname, username=myUsername, password=myPassword) as sftp:
             print ("Connection succesfully stablished ... ")
             localFilePath = '{}.wav'.format(filename)
-            remoteFilePath = '{}.wav'.format(filename)
+            remoteFilePath = 'RPI_Stethoscope_MEMs_wMED_CMU/recfile/{}.wav'.format(filename)
             sftp.put(localFilePath, remoteFilePath)
     
     else:
