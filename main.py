@@ -3,7 +3,7 @@ import time
 import pytz
 from datetime import datetime, timedelta
 import pysftp
-# from gpiozero import Button
+from gpiozero import Button
 
 myHostname = "202.28.24.148"
 myUsername = "jet"
