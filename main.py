@@ -4,7 +4,6 @@ import pytz
 from datetime import datetime, timedelta
 import pysftp
 from gpiozero import Button
-import IPython
 from scipy.io import wavfile
 import noisereduce as nr
 import soundfile as sf
