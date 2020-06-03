@@ -8,6 +8,7 @@ from gpiozero import Button
 myHostname = "202.28.24.148"
 myUsername = "jet"
 myPassword = "s4324$"
+SFTPfilepath = "RPI_Stethoscope_MEMs_wMED_CMU/recfile/"
 tz = pytz.timezone('Asia/Bangkok')
 button = Button(17)
 cnopts = pysftp.CnOpts()
@@ -25,7 +26,7 @@ while True:
         with pysftp.Connection(host=myHostname, username=myUsername, password=myPassword, cnopts=cnopts) as sftp:
             print ("Connection succesfully stablished ... ")
             localFilePath = '{}.wav'.format(filename)
-            remoteFilePath = 'RPI_Stethoscope_MEMs_wMED_CMU/recfile/{}.wav'.format(filename)
+            remoteFilePath = SFTPfilepath + '{}.wav'.format(filename)
             sftp.put(localFilePath, remoteFilePath)
     
     else:
