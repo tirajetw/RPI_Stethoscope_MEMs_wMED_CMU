@@ -1,7 +1,7 @@
 # RPI_Stethoscope_MEMs_wMED_CMU
 This project uses for make device to record sound of lung from Covid-19 Disease Patients
 
-Prepare before running this project.
+### Prepare before running this project.
 - Install Raspbian on an SD Card
 - Installer Script
 ```
@@ -50,7 +50,7 @@ pcm.dmic_sv {
 ref : https://learn.adafruit.com/adafruit-i2s-mems-microphone-breakout/raspberry-pi-wiring-test
 
 
-How to use
+### How to use
 - Install Python package requirement
 ```
 pip3 install pytz
