@@ -1,13 +1,13 @@
 import os
 import time
-import pytz
 from datetime import datetime, timedelta
+import pytz
 import pysftp
 from gpiozero import Button
 
-myHostname = "202.28.24.148"
-myUsername = "jet"
-myPassword = "s4324$"
+myHostname = ""
+myUsername = ""
+myPassword = ""
 SFTPfilepath = "RPI_Stethoscope_MEMs_wMED_CMU/recfile/"
 tz = pytz.timezone('Asia/Bangkok')
 button = Button(17)
